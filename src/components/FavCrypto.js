@@ -23,7 +23,7 @@ class FavCrypto extends React.Component {
 
      axios.get(`http://localhost:8000/getFavaData/${email}`).then(result=>{
       this.setState({
-        favData:result.data[0]
+        favData:result
       })
       console.log('favdata: ',result.data[0])
     })

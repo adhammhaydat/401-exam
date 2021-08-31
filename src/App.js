@@ -26,7 +26,7 @@ class App extends React.Component {
                 {isAuthenticated ?<Home/>:<LoginButton/>}
                 {/* TODO: if the user is logged in, render the `Home` component, if they are not, render the `Login` component */}
               </Route>
-              <Route exact path="/crypto-list">
+              <Route exact path="/favFlowers">
               {isAuthenticated ?<FavCrypto/>:<LoginButton/>}
                 {/* TODO: if the user is logged in, render the `FavFlowers` component, if they are not, render the `Login` component */}
               </Route>
